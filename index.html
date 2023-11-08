@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web Form with Swiper.js</title>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>Ruchir Chawdhry</header>
+
+
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <form action="" method="">
+                    <div class="form-row">
+                        <label for="school-name">Name of School:</label>
+                        <input type="text" id="school-name" name="school-name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="joining-date">Date of Joining:</label>
+                        <input type="date" id="joining-date" name="joining-date" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Graduated:</label>
+                        <label for="graduated-yes">Yes</label>
+                        <input type="radio" id="graduated-yes" name="graduated" value="yes">
+                        <label for="graduated-no">No</label>
+                        <input type="radio" id="graduated-no" name="graduated" value="no">
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Personal Information -->
+            <div class="swiper-slide">
+                <form action="" method="">
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" oninvalid="this.setCustomValidity('Please enter a valid phone # - 123-456-7890')" oninput="this.setCustomValidity('')" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="zip-code">Zip Code:</label>
+                        <input type="text" id="zip-code" name="zip-code" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" placeholder="A1A 1A1" oninvalid="this.setCustomValidity('Please enter a valid Canadian ZIP code - A1A 1A1')" oninput="this.setCustomValidity('')" required>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Payment Information -->
+            <div class="swiper-slide">
+                <form action="" method="post" id="payment-details" name="payment-details">
+                    <div class="form-row">
+                        <label for="cardnumber">Credit Card Number:</label>
+                        <input type="text" id="cardnumber" name="cardnumber" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="expirydate">Expiration Date:</label>
+                        <input type="date" id="expirydate" name="expirydate" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="swiper.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+
+</body>
+</html>
