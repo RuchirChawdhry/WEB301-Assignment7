@@ -37,6 +37,9 @@
                         <label for="graduated-no">No</label>
                         <input type="radio" id="graduated-no" name="graduated" value="no">
                     </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
             </div>
             
@@ -53,7 +56,10 @@
                     </div>
                     <div class="form-row">
                         <label for="zip-code">Zip Code:</label>
-                        <input type="text" id="zip-code" name="zip-code" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" placeholder="A1A 1A1" oninvalid="this.setCustomValidity('Please enter a valid Canadian ZIP code - A1A 1A1')" oninput="this.setCustomValidity('')" required>
+                        <input type="text" id="zip-code" name="zip-code" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A1A 1A1" oninvalid="this.setCustomValidity('Please enter a valid Canadian ZIP code - A1A 1A1')" oninput="this.setCustomValidity('')" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
                     </div>
                 </form>
             </div>
